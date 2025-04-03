@@ -1,0 +1,779 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Rooms</title>
+  <!--font-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+
+  <style>
+    .bg-img {
+      background-image: url(assets/hero-bg.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .about-bg {
+      background-image: url(assets/about-bg.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+
+    }
+
+    .bg-opcity {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+
+<body class="bg-[#1E1E1E]">
+  <!--header-->
+  <header>
+    <nav class="container mx-auto px-4 py-2 lg:flex lg:items-center lg:justify-between relative">
+      <div class="flex items-center justify-between ">
+        <img class="h-20 " src="assets/logo.svg" alt="">
+        <button class="p-2 lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-8 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <nav class="lg:block mt-4 lg:mt-0">
+        <ul class="lg:flex lg:items-center space-y-2 lg:space-y-0 lg:space-x-4 ">
+          <li>
+            <a href="index.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Home</a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">About
+              us</a>
+          </li>
+          <li>
+            <a href="rooms.html"
+              class="text-lg block p-2 text-[#fff] uppercase border-b border-[#AF915E] font-bold duration-300">Rooms</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Restaurant</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">EVENT</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Amenities</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Contact
+              us</a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+  </header>
+  <!--hero-->
+  <section class="bg-img relative">
+    <div class="bg-opcity">
+      <div class="container mx-auto px-4 py-20 lg:py-40">
+        <div class="p-4 text-center">
+          <h1 class="text-4xl md:text-6xl text-white font-bold">Rooms</h1>
+          <!-- <p class="text-white font-base text-lg mt-4">
+            Step into a world of relaxation and opulence at K HOTELS, a newly
+            opened full furnished luxury hotel in the city of Entebbe town, offering
+            elegance and comfort in a soothing atmosphere, with stunning views
+            of the great Lake Victoria.
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--The K hotels Story-->
+  <section>
+    <div class="px-4 pt-10 lg:pt-20 container mx-auto">
+      <div class="pt-10">
+        <h2 class="text-4xl text-white font-semibold text-center">The K hotels Room</h2>
+        <div class="grid gap-8 mt-8">
+          <!--room item Classic Studio-->
+          <div class="bg-[#282824] rounded-lg">
+            <div class="grid lg:grid-cols-2 gap-4">
+              <img class="w-full rounded-lg" src="assets/room.png" alt="">
+              <div class="p-4">
+                <div class="flex flex-wrap gap-2 justify-between">
+                  <p class="text-gray-100 text-xl md:text-2xl lg:text-4xl">Classic studio</p>
+                  <div class="flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-white font-base text-md mt-4">
+                  Step into elegance with our classic studio bedroom, featuring a fully upholstered bed adorned with the
+                  finest cotton linens for ultimate comfort. Immerse yourself in a peaceful and serene ambiance, where
+                  relaxation comes effortlessly. Unwind in style as you enjoy premium entertainment on the TV, making
+                  every moment a perfect escape.
+                </p>
+                <div class="mt-4">
+                  <ul class="flex flex-wrap gap-2">
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/square.svg" alt="">
+                      </span>
+                      <span>
+                        42sqm
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/bed.svg" alt="">
+                      </span>
+                      <span>
+                        1 Queen
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/2users.svg" alt="">
+                      </span>
+                      <span>
+                        2 Adults
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/eye.svg" alt="">
+                      </span>
+                      <span>
+                        Aerial view of Entebbe
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-4 mt-4 border-t border-gray-500 flex items-center flex-wrap gap-2 justify-end">
+                  <!-- <button class="uppercase text-xs text-white button p-2 cursor-pointer">
+                    View this room
+                  </button> -->
+                  <button
+                    class="text-lg bg-[#fff] border border-[#AF915E] text-[#1E1E1E] button px-4 py-2 rounded cursor-pointer">
+                    View details
+                  </button>
+
+                </div>
+                <div class="p-4 mt-4 flex items-center flex-wrap gap-4 justify-between">
+                  <div class="text-center">
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/tv.svg" alt="">
+                    </div>
+                    <p class="text-white">42” television</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/shower.png" alt="">
+                    </div>
+                    <p class="text-white">Bath tube</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/wifi.png" alt="">
+                    </div>
+                    <p class="text-white">24H stable wifi</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/fbf.png" alt="">
+                    </div>
+                    <p class="text-white">Free Breakfast</p>
+                  </div>
+                  <!-- <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/fbf.png" alt="">
+                    </div>
+                    <p class="text-white">Free Breakfast</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--room item Classic Suite-->
+          <div class="bg-[#282824] rounded-lg">
+            <div class="grid lg:grid-cols-2 gap-4">
+              <img class="w-full rounded-lg" src="assets/room.png" alt="">
+              <div class="p-4">
+                <div class="flex flex-wrap gap-2 justify-between">
+                  <p class="text-gray-100 text-xl md:text-2xl lg:text-4xl">Classic Suite</p>
+                  <div class="flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-white font-base text-md mt-4">
+                  The Classic Suite 2room is peerless oasis of luxury experience complete luxury and relax in the fully
+                  air-conditioned spacious room, spoil yourself with the modern and fresh interiors. Choose our
+                  magnificent for ultimate opulence spoil yourself with the modern and fresh interiors. Choose our
+                  magnificent for ultimate opulence.
+                </p>
+                <div class="mt-4">
+                  <ul class="flex flex-wrap gap-2">
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/square.svg" alt="">
+                      </span>
+                      <span>
+                        42sqm
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/bed.svg" alt="">
+                      </span>
+                      <span>
+                        1 Queen
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/2users.svg" alt="">
+                      </span>
+                      <span>
+                        2 Adults
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/eye.svg" alt="">
+                      </span>
+                      <span>
+                        Aerial view of Entebbe
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-4 mt-4 border-t border-gray-500 flex items-center flex-wrap gap-2 justify-end">
+                  <!-- <button class="uppercase text-xs text-white button p-2 cursor-pointer">
+                    View this room
+                  </button> -->
+                  <button class="text-lg bg-[#AF915E] text-[#1E1E1E] button px-4 py-2 rounded cursor-pointer">
+                    View details
+                  </button>
+
+                </div>
+                <div class="hidden p-4 mt-4 flex items-center flex-wrap gap-4 justify-between">
+                  <div class="text-center">
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/tv.svg" alt="">
+                    </div>
+                    <p class="text-white">42” television</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/shower.png" alt="">
+                    </div>
+                    <p class="text-white">Bath tube</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/wifi.png" alt="">
+                    </div>
+                    <p class="text-white">24H stable wifi</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/fbf.png" alt="">
+                    </div>
+                    <p class="text-white">Free Breakfast</p>
+                  </div>
+                  <!-- <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/fbf.png" alt="">
+                    </div>
+                    <p class="text-white">Free Breakfast</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="hidden p-8 flex items-center flex-wrap gap-4 justify-between">
+              <div class="text-center">
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/tv.svg" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/shower.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/wifi.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/fbf.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/fbf.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+            </div>
+          </div>
+          <!--room item Junior Lake Suite-->
+          <div class="bg-[#282824] rounded-lg">
+            <div class="grid lg:grid-cols-2 gap-4">
+              <img class="w-full rounded-lg" src="assets/room.png" alt="">
+              <div class="p-4">
+                <div class="flex flex-wrap gap-2 justify-between">
+                  <p class="text-gray-100 text-xl md:text-2xl lg:text-4xl">Junior Lake Suite</p>
+                  <div class="flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-white font-base text-md mt-4">
+                  Offering breathtaking views of lake victoria, the Junior Lake Suite at K Hotels, feature modern
+                  interior and guests can also enjoy complimentary high-speed internet access. These elegant hotel rooms
+                  also provide multicuisine restaurant and roof top lounge for all day dining.
+                </p>
+                <div class="mt-4">
+                  <ul class="flex flex-wrap gap-2">
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/square.svg" alt="">
+                      </span>
+                      <span>
+                        42sqm
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/bed.svg" alt="">
+                      </span>
+                      <span>
+                        1 Queen
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/2users.svg" alt="">
+                      </span>
+                      <span>
+                        2 Adults
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/eye.svg" alt="">
+                      </span>
+                      <span>
+                        Aerial view of Entebbe
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-4 mt-4 border-t border-gray-500 flex items-center flex-wrap gap-2 justify-end">
+                  <!-- <button class="uppercase text-xs text-white button p-2 cursor-pointer">
+                    View this room
+                  </button> -->
+                  <button class="text-lg bg-[#AF915E] text-[#1E1E1E] button px-4 py-2 rounded cursor-pointer">
+                    View details
+                  </button>
+
+                </div>
+                <div class="hidden p-4 mt-4 flex items-center flex-wrap gap-4 justify-between">
+                  <div class="text-center">
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/tv.svg" alt="">
+                    </div>
+                    <p class="text-white">42” television</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/shower.png" alt="">
+                    </div>
+                    <p class="text-white">Bath tube</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/wifi.png" alt="">
+                    </div>
+                    <p class="text-white">24H stable wifi</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/fbf.png" alt="">
+                    </div>
+                    <p class="text-white">Free Breakfast</p>
+                  </div>
+                  <!-- <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/fbf.png" alt="">
+                    </div>
+                    <p class="text-white">Free Breakfast</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="hidden p-8 flex items-center flex-wrap gap-4 justify-between">
+              <div class="text-center">
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/tv.svg" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/shower.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/wifi.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/fbf.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/fbf.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+            </div>
+          </div>
+          <!--room item Classic Lake Suite-->
+          <div class="bg-[#282824] rounded-lg">
+            <div class="grid lg:grid-cols-2 gap-4">
+              <img class="w-full rounded-lg" src="assets/room.png" alt="">
+              <div class="p-4">
+                <div class="flex flex-wrap gap-2 justify-between">
+                  <p class="text-gray-100 text-xl md:text-2xl lg:text-4xl">Classic Lake Suite</p>
+                  <div class="flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="size-5 text-[#FFD400]">
+                      <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-white font-base text-md mt-4">
+                  The Classic Lake Suite (2Room) at K Hotels is amongst the most luxurious and spacious room it offers
+                  refined luxury with a complement of warm and efficient services. Indulge yourself in this beautiful,
+                  spacious suit with comfortably furnished balconies . This suite includes many premium features to
+                  enhance comfort and conenience.
+                </p>
+                <div class="mt-4">
+                  <ul class="flex flex-wrap gap-2">
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/square.svg" alt="">
+                      </span>
+                      <span>
+                        42sqm
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/bed.svg" alt="">
+                      </span>
+                      <span>
+                        1 Queen
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/2users.svg" alt="">
+                      </span>
+                      <span>
+                        2 Adults
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/eye.svg" alt="">
+                      </span>
+                      <span>
+                        Aerial view of Entebbe
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-4 mt-4 border-t border-gray-500 flex items-center flex-wrap gap-2 justify-end">
+                  <!-- <button class="uppercase text-xs text-white button p-2 cursor-pointer">
+                    View this room
+                  </button> -->
+                  <button class="text-lg bg-[#AF915E] text-[#1E1E1E] button px-4 py-2 rounded cursor-pointer">
+                    View details
+                  </button>
+
+                </div>
+                <div class="hidden p-4 mt-4 flex items-center flex-wrap gap-4 justify-between">
+                  <div class="text-center">
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/tv.svg" alt="">
+                    </div>
+                    <p class="text-white">42” television</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/shower.png" alt="">
+                    </div>
+                    <p class="text-white">Bath tube</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/wifi.png" alt="">
+                    </div>
+                    <p class="text-white">24H stable wifi</p>
+                  </div>
+                  <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/fbf.png" alt="">
+                    </div>
+                    <p class="text-white">Free Breakfast</p>
+                  </div>
+                  <!-- <div>
+                    <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                      <img class="w-full p-2" src="assets/fbf.png" alt="">
+                    </div>
+                    <p class="text-white">Free Breakfast</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="hidden p-8 flex items-center flex-wrap gap-4 justify-between">
+              <div class="text-center">
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/tv.svg" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/shower.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/wifi.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/fbf.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+              <div>
+                <div class="bg-white w-14 h-14 mb-2 mx-auto flex items-center justify-center rounded-full p-2">
+                  <img class="w-full p-2" src="assets/fbf.png" alt="">
+                </div>
+                <p class="text-white">42” television</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#282824] mt-20">
+    <div class="container mx-auto px-4">
+      <div class="grid lg;grid-cols-2 xl:grid-cols-4 gap-10 py-10">
+        <div>
+          <div>
+            <img src="assets/leaf.png" alt="">
+            <img class="w-40" src="assets/logo.svg" alt="">
+            <div>
+              <ul class="space-y-4">
+                <li class="text-sm text-white font-medium"><a href="#">Contact Us</a></li>
+                <li class="text-sm text-white font-medium"><a href="#">T +256777846000</a></li>
+                <li class="text-sm text-white font-medium"><a href="#">W:www.khotels.ug</a></li>
+                <li class="text-sm text-white font-medium">
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="index.html">Home</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Rastaurant</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="about.html">About</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="rooms.html">Room</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Amenities</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Clubs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mx-auto p-4 text-[#fff] border-t border-[#D9DBE9] lg:flex items-center  justify-between text-sm">
+      <p>Copyright © 2024 UtilStop</p>
+      <ul class="flex items-center gap-2 flex-wrap mt-4 lg:mt-0">
+        <li>All Rights Reserved</li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Terms and Conditions</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Privacy Policy </a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Return Policy</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

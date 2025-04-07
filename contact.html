@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Contact</title>
+  <!--font-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+
+  <style>
+    .bg-img {
+      background-image: url(assets/hero-bg.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .about-bg {
+      background-image: url(assets/about-bg.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+
+    }
+
+    .bg-opcity {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+
+<body class="bg-[#1E1E1E]">
+  <!--header-->
+  <header>
+    <nav class="container mx-auto px-4 py-2 lg:flex lg:items-center lg:justify-between relative">
+      <div class="flex items-center justify-between ">
+        <img class="h-20 " src="assets/logo.svg" alt="">
+        <button class="p-2 lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-8 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <nav class="lg:block mt-4 lg:mt-0 xl:w-full">
+        <ul class="lg:flex lg:items-center xl:justify-center space-y-2 lg:space-y-0 lg:space-x-4 ">
+          <li>
+            <a href="index.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Home</a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">About
+              us</a>
+          </li>
+          <li>
+            <a href="rooms.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Rooms</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Restaurant</a>
+          </li>
+          <li>
+            <a href="events.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">EVENT</a>
+          </li>
+          <li>
+            <a href="amenities.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Amenities</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="text-lg block p-2 text-[#fff] uppercase border-b border-[#AF915E] font-bold duration-300">Contact
+              us</a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+  </header>
+  <!--hero-->
+  <section class="bg-img relative">
+    <div class="bg-opcity">
+      <div class="container mx-auto px-4 py-20 lg:py-40">
+        <div class="p-4 h-96 md:h-auto flex items-center justify-center text-center">
+          <h1 class="text-4xl md:text-6xl text-white font-bold">Contact</h1>
+          <!-- <p class="text-white font-base text-lg mt-4">
+            Step into a world of relaxation and opulence at K HOTELS, a newly
+            opened full furnished luxury hotel in the city of Entebbe town, offering
+            elegance and comfort in a soothing atmosphere, with stunning views
+            of the great Lake Victoria.
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--section-->
+  <section>
+    <div class="px-4 pt-10 container mx-auto">
+      <div>
+        <!-- <h2 class="text-4xl text-white font-semibold text-center">The K hotels Room</h2> -->
+        <div class="mt-8 relative rounded-xl bg-[#282824] overflow-hidden">
+          <!--Dining-->
+          <div class="absolute h-full lg:w-96 bg-[#AF915E] right-0 hidden lg:block"></div>
+          <div class="mt-10 bg-[#282824] p-4 lg:p-10 rounded-xl z-5 ">
+            <div class="grid lg:grid-cols-2 gap-4">
+              <div class="p-4 order-2 lg:order-1">
+                <p class="text-gray-100 text-xl md:text-2xl lg:text-4xl font-semibold">Get in <span
+                    class="text-[#AF915E]">Touch</span></p>
+
+                <form action="" class="mt-4">
+                  <ul class="space-y-4">
+                    <li>
+                      <label for="" class="text-sm text-gray-400">Name <span class="text-red-500">*</span></label>
+                      <input type="text" class="border border-[#E0E0E0] rounded p-3 w-full text-[#E0E0E0]">
+                      <p class="text-xs text-red-500 mt-0.5 hidden">Error</p>
+                    </li>
+                    <li>
+                      <label for="" class="text-sm text-gray-400">Email</label>
+                      <input type="email" class="border border-[#E0E0E0] rounded p-3 w-full text-[#E0E0E0]">
+                      <p class="text-xs text-red-500 mt-0.5 hidden">Error</p>
+                    </li>
+                    <li>
+                      <label for="" class="text-sm text-gray-400">Phone Number <span
+                          class="text-red-500">*</span></label>
+                      <input type="email" class="border border-[#E0E0E0] rounded p-3 w-full text-[#E0E0E0]">
+                      <p class="text-xs text-red-500 mt-0.5 hidden">Error</p>
+                    </li>
+                    <li>
+                      <label for="" class="text-sm text-gray-400">Purpose</label>
+                      <select name="" id="" class="border border-[#E0E0E0] rounded p-3 w-full text-[#E0E0E0]">
+                        <option value="">Select Purpose</option>
+                        <option value="">Select Purpose</option>
+                        <option value="">Select Purpose</option>
+                      </select>
+                    </li>
+                    <li>
+                      <button
+                        class="inline-flex space-x-2 mt-4 justify-center items-center bg-[#AF915E] w-full p-4 text-md font-medium uppercase text-[#fff] focus:outline-none rounded">
+                        <span>Send</span>
+                      </button>
+                    </li>
+                    <li class=" flex flex-wrap gap-8 mt-8">
+                      <div class="flex items-center space-x-4">
+                        <div>
+                          <img src="assets/phone.svg" alt="" class="w-8 h-8">
+                        </div>
+                        <div class="text-white">
+                          <p>PHONE</p>
+                          <p>+256 777 824 000</p>
+                        </div>
+                      </div>
+                      <div class="flex items-center space-x-4">
+                        <div>
+                          <img src="assets/email.svg" alt="" class="w-8 h-8">
+                        </div>
+                        <div class="text-white">
+                          <p>EMAIL</p>
+                          <p>info@khotels.ug</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </form>
+
+              </div>
+              <div class="relative p-4 order-1 lg:order-2">
+                <div class="h-full">
+                  <iframe class="w-full h-full rounded-xl"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.815806394622!2d32.474071!3d0.064319!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d8420c44316e9%3A0x91ea0f46ba9830b1!2sK%20Hotels%20Entebbe!5e0!3m2!1sen!2sus!4v1744052139338!5m2!1sen!2sus"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#282824] mt-20">
+    <div class="container mx-auto px-4">
+      <div class="grid lg;grid-cols-2 xl:grid-cols-4 gap-10 py-10">
+        <div>
+          <div>
+            <img class="w-40 mx-auto md:mx-0" src="assets/leaf.png" alt="">
+            <img class="w-40 mx-auto md:mx-0" src="assets/logo.svg" alt="">
+            <div>
+              <ul class="space-y-4">
+                <li class="text-sm text-white font-medium"><a href="#">Contact Us</a></li>
+                <li class="text-sm text-white font-medium"><a href="#">T +256777846000</a></li>
+                <li class="text-sm text-white font-medium"><a href="#">W:www.khotels.ug</a></li>
+                <li class="text-sm text-white font-medium">
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="index.html">Home</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Rastaurant</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="about.html">About</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="rooms.html">Room</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Amenities</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Clubs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mx-auto p-4 text-[#fff] border-t border-[#D9DBE9] lg:flex items-center  justify-between text-sm">
+      <p>Copyright © 2024 UtilStop</p>
+      <ul class="flex items-center gap-2 flex-wrap mt-4 lg:mt-0">
+        <li>All Rights Reserved</li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Terms and Conditions</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Privacy Policy </a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Return Policy</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

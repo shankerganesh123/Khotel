@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Events</title>
+  <!--font-->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    .bg-img {
+      background-image: url(assets/hero-bg.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .about-bg {
+      background-image: url(assets/about-bg.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+    }
+
+    .bg-opcity {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+
+<body class="bg-[#1E1E1E]">
+  <!--header-->
+  <header>
+    <nav class="container mx-auto px-4 py-2 lg:flex lg:items-center lg:justify-between relative">
+      <div class="flex items-center justify-between ">
+        <img class="h-20 " src="assets/logo.svg" alt="">
+        <button class="p-2 lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-8 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <nav class="lg:block mt-4 lg:mt-0 xl:w-full">
+        <ul class="lg:flex lg:items-center xl:justify-center space-y-2 lg:space-y-0 lg:space-x-4 ">
+          <li>
+            <a href="index.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Home</a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">About
+              us</a>
+          </li>
+          <li>
+            <a href="rooms.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Rooms</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Restaurant</a>
+          </li>
+          <li>
+            <a href="events.html"
+              class="text-lg block p-2 text-[#fff] uppercase border-b border-[#AF915E] font-bold duration-300">EVENT</a>
+          </li>
+          <li>
+            <a href="amenities.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Amenities</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Contact
+              us</a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+  </header>
+  <!--hero-->
+  <section class="bg-img relative">
+    <div class="bg-opcity">
+      <div class="container mx-auto px-4 py-20 lg:py-40">
+        <div class="p-4 h-96 md:h-auto flex items-center justify-center text-center">
+          <h1 class="text-4xl md:text-6xl text-white font-bold">Event & Celebration at KHotel</h1>
+          <!-- <p class="text-white font-base text-lg mt-4">
+            Step into a world of relaxation and opulence at K HOTELS, a newly
+            opened full furnished luxury hotel in the city of Entebbe town, offering
+            elegance and comfort in a soothing atmosphere, with stunning views
+            of the great Lake Victoria.
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--events-->
+  <section>
+    <div class="px-4 pt-10 max-w-7xl mx-auto">
+      <div>
+        <!-- <h2 class="text-4xl text-white font-semibold text-center">The K hotels Room</h2> -->
+        <div class="grid gap-8 mt-8">
+          <!--Conference Room-->
+          <div class="mt-10 bg-[#282824] p-4 rounded-xl">
+            <div class="grid lg:grid-cols-2 gap-4">
+              <img class="w-full rounded-lg" src="assets/room.png" alt="">
+              <div class="p-4">
+                <div class="flex flex-wrap gap-2 justify-between">
+                  <p class="text-gray-100 text-xl md:text-2xl lg:text-4xl">Conference Room</p>
+                </div>
+                <p class="text-white font-base text-md mt-4">
+                  Host your special meeting or event with our exceptional choice of conference facilities and meeting
+                  room, each full equipped with state of the art facilities for you to have a hassle-free event.
+                </p>
+                <div class="mt-4">
+                  <ul class="flex flex-wrap gap-2">
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/call.svg" alt="">
+                      </span>
+                      <span>
+                        +256 777 824 000
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/mail.svg" alt="">
+                      </span>
+                      <span>
+                        info@khotels.ug
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-4 mt-4 border-t border-gray-500">
+                  <button class="text-lg bg-[#AF915E] w-full text-[#1E1E1E] button px-4 py-2 rounded cursor-pointer">
+                    Request for a Proposal
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Menu & catering-->
+          <div class="mt-10 bg-[#282824] p-4 rounded-xl">
+            <div class="grid lg:grid-cols-2 gap-4">
+              <img class="w-full rounded-lg" src="assets/room.png" alt="">
+              <div class="p-4">
+                <div class="flex flex-wrap gap-2 justify-between">
+                  <p class="text-gray-100 text-xl md:text-2xl lg:text-4xl">Menu & catering</p>
+                </div>
+                <p class="text-white font-base text-md mt-4">
+                  Host your special meeting or event with our exceptional choices of conference facilities and meeting
+                  room, each full equipped with state of the art facilities for you to have a hassle free events.
+                </p>
+                <div class="mt-4">
+                  <ul class="flex flex-wrap gap-2">
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/call.svg" alt="">
+                      </span>
+                      <span>
+                        +256 777 824 000
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/mail.svg" alt="">
+                      </span>
+                      <span>
+                        info@khotels.ug
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-4 mt-4 border-t border-gray-500">
+                  <button class="text-lg bg-[#AF915E] w-full text-[#1E1E1E] button px-4 py-2 rounded cursor-pointer">
+                    Request for a Proposal
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Meeting Room-->
+          <div class="mt-10 bg-[#282824] p-4 rounded-xl">
+            <div class="grid lg:grid-cols-2 gap-4">
+              <img class="w-full rounded-lg" src="assets/room.png" alt="">
+              <div class="p-4">
+                <div class="flex flex-wrap gap-2 justify-between">
+                  <p class="text-gray-100 text-xl md:text-2xl lg:text-4xl">Meeting Room</p>
+                </div>
+                <p class="text-white font-base text-md mt-4">
+                  K Hotels offer a state of the art meeting room configured with the latest technology that can hold
+                  upto 40 guests. start planning your next event or meeting with us! seamless audio visual equipment.
+                  projector, Pa System, flipchart, stationery, buffet.
+                </p>
+                <div class="mt-4">
+                  <ul class="flex flex-wrap gap-2">
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/call.svg" alt="">
+                      </span>
+                      <span>
+                        +256 777 824 000
+                      </span>
+                    </li>
+                    <li class="text-xs text-[#F7EEDF] flex items-center space-x-2">
+                      <span>
+                        <img class="w-5" src="assets/mail.svg" alt="">
+                      </span>
+                      <span>
+                        info@khotels.ug
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-4 mt-4 border-t border-gray-500">
+                  <button class="text-lg bg-[#AF915E] w-full text-[#1E1E1E] button px-4 py-2 rounded cursor-pointer">
+                    Request for a Proposal
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#282824] mt-20">
+    <div class="container mx-auto px-4">
+      <div class="grid lg;grid-cols-2 xl:grid-cols-4 gap-10 py-10">
+        <div>
+          <div>
+            <img class="w-40 mx-auto md:mx-0" src="assets/leaf.png" alt="">
+            <img class="w-40 mx-auto md:mx-0" src="assets/logo.svg" alt="">
+            <div>
+              <ul class="space-y-4">
+                <li class="text-sm text-white font-medium"><a href="#">Contact Us</a></li>
+                <li class="text-sm text-white font-medium"><a href="#">T +256777846000</a></li>
+                <li class="text-sm text-white font-medium"><a href="#">W:www.khotels.ug</a></li>
+                <li class="text-sm text-white font-medium">
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="index.html">Home</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Rastaurant</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="about.html">About</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="rooms.html">Room</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Amenities</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Clubs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mx-auto p-4 text-[#fff] border-t border-[#D9DBE9] lg:flex items-center  justify-between text-sm">
+      <p>Copyright © 2024 UtilStop</p>
+      <ul class="flex items-center gap-2 flex-wrap mt-4 lg:mt-0">
+        <li>All Rights Reserved</li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Terms and Conditions</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Privacy Policy </a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Return Policy</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

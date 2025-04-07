@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <title>About Us</title>
-  <!--font-->
-
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!--tailwind cdn-->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 
@@ -24,13 +27,103 @@
       background-image: url(assets/about-bg.png);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: auto;
+      background-size: contain;
 
     }
 
     .bg-opcity {
       background-color: rgba(0, 0, 0, 0.7);
     }
+
+
+    /*owl carousel css*/
+    .owl-nav {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      bottom: 50%;
+    }
+
+    .owl-nav .owl-prev,
+    .owl-next {
+      border: 1px solid #000 !important;
+      border-radius: 50%;
+      display: none !important;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+      width: 24px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #ffffff;
+      /* border: 2px solid #F3C160 !important; */
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity .2s ease;
+      border-radius: 30px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+      width: 36px;
+      height: 10px;
+      background: #AF915E;
+    }
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot {
+      background-color: #fff;
+      border-radius: 100% !important;
+    }
+
+    .owl-nav .owl-prev,
+    .owl-next {
+      border: 1px solid #65807954 !important;
+    }
+
+    .owl-prev {
+      background: url('assets/icons/right-arrow.svg') no-repeat center;
+      background-size: contain;
+      width: 40px;
+      height: 40px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .owl-next {
+      background: url('right-arrow.svg') no-repeat center;
+      background-size: contain;
+      width: 40px;
+      height: 40px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    }
+
+    .owl-prev span,
+    .owl-next span {
+      display: none;
+      /* Hide the default text */
+    }
+
+    .owl-prev span,
+    .owl-next span {
+      display: block;
+      font-size: x-large;
+
+    }
+
+    .owl-theme .owl-dots,
+    .owl-theme .owl-nav {
+      margin-top: 28px;
+    }
+
+    button.owl-dot {
+      background-color: #1E1E1E !important;
+    }
+
+    /*owl carousel css end*/
   </style>
 </head>
 
@@ -48,8 +141,8 @@
           </svg>
         </button>
       </div>
-      <nav class="lg:block mt-4 lg:mt-0">
-        <ul class="lg:flex lg:items-center space-y-2 lg:space-y-0 lg:space-x-4 ">
+      <nav class="lg:block mt-4 lg:mt-0 xl:w-full">
+        <ul class="lg:flex lg:items-center xl:justify-center space-y-2 lg:space-y-0 lg:space-x-4 ">
           <li>
             <a href="index.html"
               class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Home</a>
@@ -68,15 +161,15 @@
               class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Restaurant</a>
           </li>
           <li>
-            <a href="#"
+            <a href="events.html"
               class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">EVENT</a>
           </li>
           <li>
-            <a href="#"
+            <a href="amenities.html"
               class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Amenities</a>
           </li>
           <li>
-            <a href="#"
+            <a href="contact.html"
               class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Contact
               us</a>
           </li>
@@ -88,8 +181,8 @@
   <section class="bg-img relative">
     <div class="bg-opcity">
       <div class="container mx-auto px-4 py-20 lg:py-40">
-        <div class="p-4 text-center">
-          <h1 class="text-4xl md:text-6xl text-white font-bold">About Us</h1>
+        <div class="p-4 h-96 md:h-auto flex items-center justify-center text-center">
+          <h1 class="text-4xl md:text-6xl text-white font-bold">Amenities</h1>
           <!-- <p class="text-white font-base text-lg mt-4">
             Step into a world of relaxation and opulence at K HOTELS, a newly
             opened full furnished luxury hotel in the city of Entebbe town, offering
@@ -101,9 +194,9 @@
     </div>
   </section>
   <!--The K hotels Story-->
-  <section class="about-bg">
+  <section>
     <div class="px-4 pt-10 lg:pt-20 max-w-5xl mx-auto">
-      <div class="pt-10">
+      <div class="pt-10 about-bg">
         <h2 class="text-4xl text-white font-semibold text-center">The K hotels Story</h2>
         <p class="text-white font-base font-xs text-center mt-8">Welcome to K Hotels, a sanctuary of luxury and
           relaxation nestled in the heart of Entebbe town. As a fully furnished 4-star boutique hotel, we pride
@@ -147,20 +240,27 @@
   </section>
   <!--Gallery-->
   <section>
+    <!--carousel-->
     <div class="px-4 pt-10 lg:pt-20 container mx-auto">
       <div class="">
         <h2 class="text-4xl text-white font-semibold text-center">Gallery</h2>
       </div>
-      <div class="mt-10 bg-[#282824] p-4 rounded-xl">
-        <div>
-          <img class="w-full rounded-lg" src="assets/2.jpeg" alt="">
+      <div class="relative grid md:grid-cols-2 xl:grid-cols-4 gap-4 mt-10 owl-carousel owl-theme">
+        <!--card-item-->
+        <div class="item p-4">
+          <img src="assets/2.jpeg" class="w-full rounded-xl" alt="">
         </div>
-        <div class="flex items-center space-x-1 justify-center py-8">
-          <div class="w-6 h-2 rounded-full bg-[#CCCCCC]"></div>
-          <div class="w-6 h-2 rounded-full bg-[#CCCCCC]"></div>
-          <div class="w-10 h-2 rounded-full bg-[#AF915E]"></div>
-          <div class="w-6 h-2 rounded-full bg-[#CCCCCC]"></div>
-          <div class="w-6 h-2 rounded-full bg-[#CCCCCC]"></div>
+        <!--card-item-->
+        <div class="item p-4">
+          <img src="assets/2.jpeg" class="w-full rounded-xl" alt="">
+        </div>
+        <!--card-item-->
+        <div class="item p-4">
+          <img src="assets/2.jpeg" class="w-full rounded-xl" alt="">
+        </div>
+        <!--card-item-->
+        <div class="item p-4">
+          <img src="assets/2.jpeg" class="w-full rounded-xl" alt="">
         </div>
       </div>
     </div>
@@ -171,8 +271,8 @@
       <div class="grid lg;grid-cols-2 xl:grid-cols-4 gap-10 py-10">
         <div>
           <div>
-            <img src="assets/leaf.png" alt="">
-            <img class="w-40" src="assets/logo.svg" alt="">
+            <img class="w-40 mx-auto md:mx-0" src="assets/leaf.png" alt="">
+            <img class="w-40 mx-auto md:mx-0" src="assets/logo.svg" alt="">
             <div>
               <ul class="space-y-4">
                 <li class="text-sm text-white font-medium"><a href="#">Contact Us</a></li>
@@ -229,7 +329,25 @@
     </div>
   </footer>
 
-
+  <!-- Owl Carousel JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 1 },
+          1000: { items: 1 },
+          1800: { items: 1 }
+        }
+      });
+    });
+  </script>
+  <!-- Owl Carousel JS end-->
 </body>
 
 </html>

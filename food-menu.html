@@ -1,0 +1,637 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Food-Menu</title>
+  <!--font-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+
+  <style>
+    .bg-img {
+      background-image: url(assets/hero-bg.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .about-bg {
+      background-image: url(assets/about-bg.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+
+    }
+
+    .bg-opcity {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    /*accordion css*/
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    }
+
+    .accordion-content.open {
+      max-height: 200px;
+      padding: 1rem;
+    }
+
+    /*accordion css end*/
+  </style>
+</head>
+
+<body class="bg-[#1E1E1E]">
+  <!--header-->
+  <header>
+    <nav class="container mx-auto px-4 py-2 lg:flex lg:items-center lg:justify-between relative">
+      <div class="flex items-center justify-between ">
+        <img class="h-20 " src="assets/logo.svg" alt="">
+        <button class="p-2 lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-8 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <nav class="lg:block mt-4 lg:mt-0 xl:w-full">
+        <ul class="lg:flex lg:items-center xl:justify-center space-y-2 lg:space-y-0 lg:space-x-4 ">
+          <li>
+            <a href="index.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Home</a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">About
+              us</a>
+          </li>
+          <li>
+            <a href="rooms.html"
+              class="text-lg block p-2 text-[#fff] uppercase border-b border-[#AF915E] font-bold duration-300">Rooms</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Restaurant</a>
+          </li>
+          <li>
+            <a href="events.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">EVENT</a>
+          </li>
+          <li>
+            <a href="amenities.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Amenities</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="text-lg font-base block p-2 text-[#fff] uppercase hover:border-b hover:border-[#AF915E] duration-300">Contact
+              us</a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+  </header>
+  <!--hero-->
+  <section class="bg-img relative">
+    <div class="bg-opcity">
+      <div class="container mx-auto px-4 py-20 lg:py-40">
+        <div class="p-4 h-96 md:h-auto flex items-center justify-center text-center">
+          <h1 class="text-4xl md:text-6xl text-white font-bold">Menu</h1>
+          <!-- <p class="text-white font-base text-lg mt-4">
+            Step into a world of relaxation and opulence at K HOTELS, a newly
+            opened full furnished luxury hotel in the city of Entebbe town, offering
+            elegance and comfort in a soothing atmosphere, with stunning views
+            of the great Lake Victoria.
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--The K hotels Story-->
+  <section>
+    <div class="px-4 pt-10 lg:pt-20 container mx-auto">
+      <div class="pt-10">
+        <div class="relative">
+          <div>
+            <button id="dropdown-button" type="button"
+              class="inline-flex justify-center items-center bg-[#fff] w-full h-[50px] px-4 py-2 text-sm font-medium text-gray-900 focus:outline-none cursor-pointer rounded"
+              aria-haspopup="true" aria-expanded="false">
+              <span id="dropdown-selected-option" class="w-full text-left overflow-hidden flex-1">Food items</span>
+              <svg id="caret" class="ml-2.5 -mr-1.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" s=""
+                  d="M6.293 7.293a1 1 0 011.414 0L10 9.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+          <div id="dropdown-menu"
+            class="origin-top-right max-h-60 overflow-auto absolute z-50 w-full left-0 mt-1 rounded-md shadow-md ring-black ring-opacity-5 focus:outline-none bg-[#fff]"
+            role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button" tabindex="-1">
+            <div class="py-1 text-white" role="none">
+              <!--accordions-->
+              <div>
+                <div class="">
+                  <div class="w-full space-y-1">
+                    <div class="rounded-lg overflow-hidden">
+                      <button class="w-full flex justify-between items-center p-4 bg-[#FFF9EC] hover:bg-gray-100"
+                        onclick="toggleAccordion(0)">
+                        <span class="font-medium text-[#000000]">Food</span>
+                        <svg id="icon-0" class="w-5 h-5 text-[#000000] transition-transform transform"
+                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                      </button>
+                      <div id="content-0" class="accordion-content open bg-white text-[#000000]">This is the content of
+                        item 1.</div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden">
+                      <button class="w-full flex justify-between items-center p-4 bg-[#FFF9EC] hover:bg-gray-100"
+                        onclick="toggleAccordion(1)">
+                        <span class="font-medium text-[#000000]">Food Item 2</span>
+                        <svg id="icon-1" class="w-5 h-5 text-[#000000] transition-transform transform"
+                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                      </button>
+                      <div id="content-1" class="accordion-content bg-white text-[#000000]">This is the content of item
+                        2.</div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden">
+                      <button class="w-full flex justify-between items-center p-4 bg-[#FFF9EC] hover:bg-gray-100"
+                        onclick="toggleAccordion(2)">
+                        <span class="font-medium text-[#000000]">Food Item 3</span>
+                        <svg id="icon-2" class="w-5 h-5 text-[#000000] transition-transform transform"
+                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                      </button>
+                      <div id="content-2" class="accordion-content bg-white text-[#000000]">This is the content of item
+                        3.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-8 container mx-auto">
+          <div class="pt-10">
+            <h2 class="text-4xl text-white font-semibold text-center">The K hotels Room</h2>
+            <div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8 mt-10">
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-1.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Herb crushed fish finger
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-2.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Chicken Nuggets
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-3.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Cutlet <span class="text-sm">(Paneer &corn/Vegetable)</span>
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-4.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Chicken Nuggets
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-1.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Herb crushed fish finger
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-1.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Herb crushed fish finger
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-2.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Chicken Nuggets
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-3.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Cutlet <span class="text-sm">(Paneer &corn/Vegetable)</span>
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-4.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Chicken Nuggets
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-1.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Herb crushed fish finger
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-1.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Herb crushed fish finger
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-2.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Chicken Nuggets
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-3.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Cutlet <span class="text-sm">(Paneer &corn/Vegetable)</span>
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-4.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Chicken Nuggets
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-1.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Herb crushed fish finger
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-1.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Herb crushed fish finger
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-2.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Chicken Nuggets
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-3.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Cutlet <span class="text-sm">(Paneer &corn/Vegetable)</span>
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-4.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Chicken Nuggets
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-1.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Herb crushed fish finger
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-1.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Herb crushed fish finger
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-2.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Chicken Nuggets
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-3.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Cutlet <span class="text-sm">(Paneer &corn/Vegetable)</span>
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-4.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Chicken Nuggets
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--food item-->
+              <div class="p-4">
+                <img class="w-full p-4" src="assets/food-1.png" alt="">
+                <div class="">
+                  <div class="space-y-2">
+                    <p class="text-white text-xl text-center">
+                      Herb crushed fish finger
+                    </p>
+                    <p class="text-white text-xl text-center">
+                      RS 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-20">
+          <a href="" class="flex items-center space-x-1 text-white border rounded p-4 ">
+            <span>Know More</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#282824] mt-20">
+    <div class="container mx-auto px-4">
+      <div class="grid lg;grid-cols-2 xl:grid-cols-4 gap-10 py-10">
+        <div>
+          <div>
+            <img class="w-40 mx-auto md:mx-0" src="assets/leaf.png" alt="">
+            <img class="w-40 mx-auto md:mx-0" src="assets/logo.svg" alt="">
+            <div>
+              <ul class="space-y-4">
+                <li class="text-sm text-white font-medium"><a href="#">Contact Us</a></li>
+                <li class="text-sm text-white font-medium"><a href="#">T +256777846000</a></li>
+                <li class="text-sm text-white font-medium"><a href="#">W:www.khotels.ug</a></li>
+                <li class="text-sm text-white font-medium">
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="index.html">Home</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Rastaurant</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="about.html">About</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="text-sm text-white font-medium"><a href="rooms.html">Room</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Amenities</a></li>
+            <li class="text-sm text-white font-medium"><a href="#">Clubs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mx-auto p-4 text-[#fff] border-t border-[#D9DBE9] lg:flex items-center  justify-between text-sm">
+      <p>Copyright © 2024 UtilStop</p>
+      <ul class="flex items-center gap-2 flex-wrap mt-4 lg:mt-0">
+        <li>All Rights Reserved</li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Terms and Conditions</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Privacy Policy </a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="" class="text-[#FFD400]">Return Policy</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!--accordion script-->
+  <script>
+    function toggleAccordion(index) {
+      document.querySelectorAll('[id^="content-"]').forEach((el, i) => {
+        const icon = document.getElementById(`icon-${i}`);
+        if (i === index) {
+          el.classList.toggle('open');
+          icon.classList.toggle('rotate-45');
+        } else {
+          el.classList.remove('open');
+          icon.classList.remove('rotate-45');
+        }
+      });
+    }
+  </script>
+  <!--accordion script end-->
+</body>
+
+</html>
